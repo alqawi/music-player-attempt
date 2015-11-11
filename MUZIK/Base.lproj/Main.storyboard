@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MUZIK" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUZIK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kbm-aM-4vA">
+                                <rect key="frame" x="239" y="140" width="121.5" height="49.5"/>
+                                <fontDescription key="fontDescription" name="IowanOldStyle-Roman" family="Iowan Old Style" pointSize="36"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="USERNAME" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tXm-tm-Ai8">
+                                <rect key="frame" x="0.0" y="265" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="PASSWORD" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="08d-vg-yMv">
+                                <rect key="frame" x="0.0" y="327" width="600" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nl3-E1-jqK">
+                                <rect key="frame" x="277.5" y="417" width="45" height="30"/>
+                                <state key="normal" title="LOGIN"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kbm-aM-4vA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1oa-P6-PE7"/>
+                            <constraint firstItem="08d-vg-yMv" firstAttribute="top" secondItem="tXm-tm-Ai8" secondAttribute="bottom" constant="32" id="3aA-BV-mf9"/>
+                            <constraint firstItem="Kbm-aM-4vA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="44N-lA-Omk"/>
+                            <constraint firstItem="nl3-E1-jqK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Ro-3g-YUu"/>
+                            <constraint firstItem="nl3-E1-jqK" firstAttribute="top" secondItem="08d-vg-yMv" secondAttribute="bottom" constant="60" id="7Hx-MW-Wd1"/>
+                            <constraint firstItem="08d-vg-yMv" firstAttribute="width" secondItem="tXm-tm-Ai8" secondAttribute="width" id="BVc-Eq-JbV"/>
+                            <constraint firstItem="tXm-tm-Ai8" firstAttribute="top" secondItem="Kbm-aM-4vA" secondAttribute="bottom" constant="75.5" id="Bjt-Zz-VSB"/>
+                            <constraint firstItem="tXm-tm-Ai8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Tjp-z0-dRN"/>
+                            <constraint firstItem="tXm-tm-Ai8" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="WZD-jo-53i"/>
+                            <constraint firstItem="08d-vg-yMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w1c-pw-1fK"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="174" y="306"/>
+        </scene>
+    </scenes>
+</document>
